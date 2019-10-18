@@ -10,5 +10,19 @@ package stringmatching;
  * @author will2
  */
 public class RabinKarp {
+    public String string;
+    public String pattern;
+    public int hash_string;
+    public int hash_pattern;
+    
+    RabinKarp(String userString, String userPattern){
+        this.string = userString;
+        this.pattern = userPattern;
+    }
+    
+    public int calculateHash() {
+        
+    }
+        
     
 }
