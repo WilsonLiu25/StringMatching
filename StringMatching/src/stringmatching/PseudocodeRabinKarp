@@ -2,7 +2,7 @@ Preprocessing time: O(m)
 Matching time: O((n - m + 1)m)
 
 Begin
-    Rabin-Karp(userString, userPattern, q)
+    Rabin-Karp(userString, userPattern, mod)
         maxChar = 256
         stringLength = userString.length
         patternLength = userPattern.length

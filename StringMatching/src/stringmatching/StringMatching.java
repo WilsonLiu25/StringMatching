@@ -19,7 +19,7 @@ public class StringMatching {
     public int mod = 11; // a prime number
     private RabinKarp rabinKarp = RabinKarp.getInstance(); //utilising the singleton pattern
     
-    StringMatching(){
+    public StringMatching(){
         System.out.println(">Please enter a string you would like to get checked for patterns");
         scan = new Scanner(System.in);
         userString = scan.nextLine();

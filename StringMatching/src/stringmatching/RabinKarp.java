@@ -10,9 +10,9 @@ package stringmatching;
  * @author will2
  */
 public class RabinKarp {
-    public int stringLength;
-    public int patternLength;
-    public int length_string;
+    //public int stringLength;
+    //public int patternLength;
+    //public int length_string;
     private static RabinKarp instance = new RabinKarp(); //singleton pattern
 
     private RabinKarp(){
@@ -84,6 +84,5 @@ public class RabinKarp {
         if (!found) {
             System.out.println("- No instances of the pattern were found");
         }
-        
     }
 }
