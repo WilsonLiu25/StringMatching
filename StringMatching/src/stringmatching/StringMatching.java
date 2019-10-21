@@ -16,7 +16,7 @@ public class StringMatching {
     public String userString;
     public String userPattern;
     public Scanner scan;
-    int mod = 101; // a prime number
+    int mod = 11; // a prime number
     RabinKarp rabinKarp = new RabinKarp();
     
     StringMatching(){
