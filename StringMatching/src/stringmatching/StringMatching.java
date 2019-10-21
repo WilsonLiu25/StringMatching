@@ -17,7 +17,7 @@ public class StringMatching {
     public String userPattern;
     public Scanner scan;
     public int mod = 11; // a prime number
-    private RabinKarp rabinKarp = RabinKarp.getInstance();
+    private RabinKarp rabinKarp = RabinKarp.getInstance(); //utilising the singleton pattern
     
     StringMatching(){
         System.out.println(">Please enter a string you would like to get checked for patterns");

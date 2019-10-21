@@ -79,10 +79,11 @@ public class RabinKarp {
                     stringHash = (stringHash + mod);
                 }
             }
-            
-                    if (!false) {
-            System.out.println("- No instances of the pattern were found");
         }
+        
+        //if there is no pattern found within the userString, print this
+        if (!found) {
+            System.out.println("- No instances of the pattern were found");
         }
         
     }
