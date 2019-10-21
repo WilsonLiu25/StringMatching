@@ -14,11 +14,10 @@ public class RabinKarp {
     public int patternLength;
     public int length_string;
     private static RabinKarp instance = new RabinKarp(); //singleton pattern
-    
-    
+
     private RabinKarp(){
         
-    }
+    }   
     
     public static RabinKarp getInstance(){
         return instance;
@@ -87,6 +86,4 @@ public class RabinKarp {
         }
         
     }
-        
-    
 }
