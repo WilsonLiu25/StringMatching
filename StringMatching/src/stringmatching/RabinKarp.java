@@ -13,10 +13,15 @@ public class RabinKarp {
     public int stringLength;
     public int patternLength;
     public int length_string;
+    private static RabinKarp instance = new RabinKarp(); //singleton pattern
     
     
-    public RabinKarp(){
+    private RabinKarp(){
         
+    }
+    
+    public static RabinKarp getInstance(){
+        return instance;
     }
     
     public void RabinKarpSearch(String userString, String userPattern, int mod) {
@@ -25,7 +30,8 @@ public class RabinKarp {
         int stringHash = 0;
         int patternHash = 0;
         int h = 1;
-        int maxChar = 256; //the MAX number of characters in the input alphabet 
+        int maxChar = 256; //the MAX number of characters in the input alphabet
+        boolean found = false;
         
         int i; //used for the for loops
         int j; //used for the for loops
@@ -57,6 +63,7 @@ public class RabinKarp {
                 //if patternHash == stringHash
                 if (j == patternLength) {
                     System.out.println("- There has been an instance of the pattern found at index " + i);
+                    found = true;
                 }
             }
             
@@ -72,6 +79,10 @@ public class RabinKarp {
                     stringHash = (stringHash + mod);
                 }
             }
+            
+                    if (!false) {
+            System.out.println("- No instances of the pattern were found");
+        }
         }
         
     }

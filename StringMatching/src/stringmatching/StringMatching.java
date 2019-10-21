@@ -16,14 +16,14 @@ public class StringMatching {
     public String userString;
     public String userPattern;
     public Scanner scan;
-    int mod = 11; // a prime number
-    RabinKarp rabinKarp = new RabinKarp();
+    public int mod = 11; // a prime number
+    private RabinKarp rabinKarp = RabinKarp.getInstance();
     
     StringMatching(){
         System.out.println(">Please enter a string you would like to get checked for patterns");
         scan = new Scanner(System.in);
         userString = scan.nextLine();
-
+        
         System.out.println(">Please enter a string pattern you would like to search for");
         scan = new Scanner(System.in);
         userPattern = scan.nextLine();
@@ -32,7 +32,6 @@ public class StringMatching {
                 + " and searching for pattern of " + userPattern);
         
         rabinKarp.RabinKarpSearch(userString, userPattern, mod);
-        
     }
     
     public static void main(String[] args) {
